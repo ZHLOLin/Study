@@ -1,0 +1,10 @@
+1.Pull the project using github desktop
+2.Swtich to the Degree_Requirement branch
+3.In docker Dev Environments, add the local directory.
+4.Type 	
+	docker-compose down
+	docker rm -f $(docker ps -a -q)
+	docker volume rm $(docker volume ls -q)
+	docker-compose up -f ...
+   in console
+5. Check http://localhost:8080/
